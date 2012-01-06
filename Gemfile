@@ -40,3 +40,9 @@ end
 gem 'execjs'
 gem 'therubyracer'
 
+# Jiang for heroku, since heroku prefer postgresql to sqlite3
+group :production do
+  # gems specifically for Heroku go here
+  gem "pg"
+end
+
